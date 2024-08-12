@@ -1,0 +1,63 @@
+.hex {
+    float: left;
+    margin-left: 3px; /* 0.5 * 6 */
+    margin-bottom: -26px; /* 0.5 * -52 */
+    transition: transform 0.3s;
+}
+.hex .top {
+    width: 0;
+    border-bottom: 30px solid rgba(110, 239, 67, 0.4); /* 0.5 * 60 */
+    border-left: 52px solid transparent; /* 0.5 * 104 */
+    border-right: 52px solid transparent; /* 0.5 * 104 */
+}
+.hex .middle {
+    width: 104px; /* 0.5 * 208 */
+    height: 60px; /* 0.5 * 120 */
+    background: rgba(110, 239, 67, 0.4);
+}
+
+.hex .logo {
+    width: 104px; /* 0.5 * 208 */
+    height: 60px; /* 0.5 * 120 */
+    background: rgba(253, 253, 253, 0.4);
+}
+.hex .bottom {
+    width: 0;
+    border-top: 30px solid rgba(110, 239, 67, 0.4); /* 0.5 * 60 */
+    border-left: 52px solid transparent; /* 0.5 * 104 */
+    border-right: 52px solid transparent; /* 0.5 * 104 */
+    /*text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;*/
+}
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 53px; /* 0.5 * 107 */
+}
+/* Hover effects for selected hexagons */
+.hex:nth-child(1):hover, .hex:nth-child(3):hover, .hex:nth-child(5):hover {
+    transform: scale(1.1);
+}
+.hex:nth-child(1):hover .top, .hex:nth-child(1):hover .middle, .hex:nth-child(1):hover .bottom {
+    /*background: #ff6f61;*/
+    /*border-color: #ff6f61;*/
+}
+.hex:nth-child(3):hover .top, .hex:nth-child(3):hover .middle, .hex:nth-child(3):hover .bottom {
+    /*background: rgba(255, 255, 255, 0.4);*/
+    /*border-color: rgba(255, 255, 255, 0.4);*/
+}
+.hex:nth-child(5):hover .top, .hex:nth-child(5):hover .middle, .hex:nth-child(5):hover .bottom {
+    background: #61ff6f;
+    border-color: #61ff6f;
+}
+.image_logos{
+    position: relative;
+    height: -webkit-fill-available ;
+
+}
+.scale-input {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+}
