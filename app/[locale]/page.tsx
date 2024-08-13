@@ -59,7 +59,7 @@ export default function Home({locale}) {
       });
     }
 
-    adjustHexSize(0.8);
+    adjustHexSize(0.78);
   }, []);
 
   const redirection =(url:string)=>{
